@@ -40,6 +40,7 @@
     } 
 
     $Rocky = new movie('Rocky',1986,'Silvester Stallone','Silvester Stallone',11);
+    $Rocky-> setVote(12);
     var_dump($Rocky);
     
     $IlPadrino = new movie('Il Padrino',1972,'Martin Scorsese','Al Pacino',9,);
