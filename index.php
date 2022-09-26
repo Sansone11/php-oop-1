@@ -27,7 +27,7 @@
             // else $this->vote ='il valore inserito non è corretto';
 
         }
-
+        // all’interno della classe è definito almeno un metodo
          function setVote($vote){
              if($vote >=0||$vote <=10 ){
                  $this->vote =$vote;
