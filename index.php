@@ -24,11 +24,16 @@
         }
     } 
 
-    $film = new movie('Rocky',1986,'Silvester Stallone','Silvester Stallone',7/10);
-    var_dump($film);
+    $Rocky = new movie('Rocky',1986,'Silvester Stallone','Silvester Stallone',7/10);
+    var_dump($Rocky);
     
-    $filmDrama = new movie('Il Padrino',1972,'Martin Scorsese','Al Pacino',9/10,);
-    var_dump($filmDrama);
+    $IlPadrino = new movie('Il Padrino',1972,'Martin Scorsese','Al Pacino',9/10,);
+    var_dump($IlPadrino);
+
+    $LoSqualo = new movie('Lo Squalo', 1975,'Steven Spielberg','Roy Scheider',8/10);
+    var_dump($LoSqualo);
+    $Shining = new movie('Shining',1980,'Stanley Kubrik','Jack Nicholson',8/10);
+    var_dump($Shining);
     ?>
     
 </body>
