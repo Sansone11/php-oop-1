@@ -44,27 +44,25 @@
 
     $Rocky = new movie('Rocky', 1986, 'Silvester Stallone', 'Silvester Stallone', 6);
     $Rocky->setVote(4);
-    var_dump($Rocky);
+    // var_dump($Rocky);
 
     $IlPadrino = new movie('Il Padrino', 1972, 'Martin Scorsese', 'Al Pacino', 9,);
     $IlPadrino->setVote(18);
-    var_dump($IlPadrino);
+    // var_dump($IlPadrino);
 
     $LoSqualo = new movie('Lo Squalo', 1975, 'Steven Spielberg', 'Roy Scheider', 8);
     $LoSqualo->setVote(-3);
-    var_dump($LoSqualo);
+    // var_dump($LoSqualo);
 
     $Shining = new movie('Shining', 1980, 'Stanley Kubrik', 'Jack Nicholson', 8);
     $Shining->setVote(4);
-    var_dump($Shining);
-    ?>
-    <?php
+    // var_dump($Shining);
+    
     $movies = [
-        $Rocky = new movie('Rocky', 1986, 'Silvester Stallone', 'Silvester Stallone', 6),
-        $IlPadrino = new movie('Il Padrino', 1972, 'Martin Scorsese', 'Al Pacino', 9,),
-        $LoSqualo = new movie('Lo Squalo', 1975, 'Steven Spielberg', 'Roy Scheider', 8),
-        $Shining = new movie('Shining', 1980, 'Stanley Kubrik', 'Jack Nicholson', 8),
-
+        $Rocky,
+        $IlPadrino,
+        $LoSqualo,
+        $Shining,
     ];
    
     ?>
@@ -72,20 +70,38 @@
         <div class="card">
             <?php
             foreach ($movies as $movie) {
-                strval($movie);
-                $title = $movie['title'];
-                $year = $movie['year'];
-                $regista = $movie['regista'];
-                $actor = $movie['actor'];
-                $vote = $movie['vote'];
+                // var_dump($movie);
+                ?>
+                <h1>
+                    <?php
+                    echo $movie->title;
+                    ?>
+                </h1>
+                <p>
+                <?php
+                    echo $movie->year;
+                ?>
+                </p>
+                <p>
+                <?php
+                    echo $movie ->regista;
+                ?>
+                </p>
+                <p>
+                    <?php 
+                    echo $movie->actor;
+                    ?>
+                </p>
+                <p>
+                <?php
+                echo $movie->vote;
+                ?>
+                </p>
+                <?php
             };
             ?>
 
-            <h1>
-                <?php
-                echo $title
-                ?>
-            </h1>
+            
 
         </div>
 
